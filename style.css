@@ -11,6 +11,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -20,7 +21,7 @@ a {
 .btn {
   display: inline-block;
   padding: 15px 60px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-transform: uppercase;
   background-color: #111;
   color: #eee;
@@ -48,6 +49,7 @@ a {
   height: 80px;
   background-color: #111;
   color: #eee;
+  position: fixed;
 }
 
 #navbar-container {
@@ -67,14 +69,13 @@ a {
   display: flex;
 }
 
-#navbar-menu li a {
-  color: #eee;
+#navbar-menu li {
   text-transform: uppercase;
   padding: 10px;
 }
 
 #showcase {
-  height: 95vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,11 +91,13 @@ a {
 
 #showcase-container h2 {
   font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 #showcase-container p {
   font-size: 1.2rem;
   padding: 2px 0;
+  margin-bottom: 10px;
 }
 
 #clients {
@@ -114,4 +117,117 @@ a {
 .client {
   display: inline-block;
   width: 25%;
+}
+
+#features {
+  width: 100%;
+  background-color: #222;
+  color: #eee;
+  padding: 50px;
+}
+
+#features-container {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#product {
+  width: 100%;
+  padding: 50px;
+}
+
+#product-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#items {
+  max-width: 500px;
+}
+
+#items .item {
+  display: flex;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+#items .item i {
+  margin-right: 15px;
+}
+
+#testimonials {
+  width: 100%;
+  background-color: #222;
+  color: #eee;
+  padding: 50px;
+}
+
+#testimonials-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: #333;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.testimonial-image {
+  height: 150px;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+#gallery {
+  width: 100%;
+  margin: auto;
+  padding: 50px;
+}
+
+#gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.gallery-image {
+  display: inline-block;
+  width: 470px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+#footer {
+  background-color: #222;
+  color: #eee;
+  padding: 30px;
+  text-align: center;
 }
